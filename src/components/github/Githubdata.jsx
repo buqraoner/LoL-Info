@@ -16,13 +16,16 @@ function Githubdata() {
     }, []);
 
 
+    
+
+
 
 
 
 
 
   return (
-    <div>githubdata</div>
+    <div></div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
 
+
 function PlayerSearcher() {
     const [searchText, setSearchText] = useState("");
     const [playerData, setPlayerData] = useState({});
@@ -27,18 +28,21 @@ function PlayerSearcher() {
 
     return (
         <div>
-            <div className='container'>
-                <h4>
-                    League Of Legends Player Searcher
+            <h4 className='SearchHeader'>
+                    Gerçek zamanli oyuncu statları
                 </h4>
-                <input type="text" placeholder="Enter Player Name" onChange={e => setSearchText(e.target.value)} />
-                <button onClick={e => searchForPlayer(e)}>Search for player</button>
+            <div className='searchBox'>
+                
+
+                <input className='bugo' type="text" placeholder="Oyun içi sihirdar arama" onChange={e => setSearchText(e.target.value)} />
+                <button className="opacity-80" onClick={e => searchForPlayer(e)}><strong>Arama</strong></button>
             </div>
             {JSON.stringify(playerData) != null ?
                 <>
-                    <p>{playerData.name}</p>
-                    <img height={150} width={150} src={"http://ddragon.leagueoflegends.com/cdn/12.6.1/img/profileicon/" + playerData.profileIconId + ".png"} />
-                    <p>{playerData.summonerLevel}</p>
+                    <p className='playerName'>{playerData.name}</p>
+                    <img className='border-2 border-sky-500' height={150} width={150}
+                        src={"http://ddragon.leagueoflegends.com/cdn/12.6.1/img/profileicon/" + playerData.profileIconId + ".png"} />
+                    <p className='playerData'>{playerData.summonerLevel}</p>
                 </>
                 :
                 <><p>We don't have player data</p></>}

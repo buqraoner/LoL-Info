@@ -15,8 +15,6 @@ function Home() {
     <div>
       <Navbar />
       <PlayerSearcher/>
-      
-      
       <Githubdata/>
       
       
