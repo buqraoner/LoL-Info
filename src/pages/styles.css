@@ -6,7 +6,9 @@ body{
             #ac32e4 0%,
             #7918f2 48%,
             #4801ff 100%);
-    
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
 
 }
 
@@ -16,17 +18,51 @@ body{
     background-color: #3A4556;
     width: 740px;
     height: 80px;
-    padding: 35px 30px 20px 30px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
     
+
 }
 
 .bugo{
     background-color: #2D3848;
+    
 }
 
 button{
     background-color: #2AA3CC;
-    align-items: flex-start;
-    padding: 1px 6px 1px 6px;
+    
+    
+    font-size: 14px;
+    height: 36px;
+    width: 120px;
+    
+    
+}
+
+input{
+    width: 320px;
+    height: 35px;
+    color: #2a2a2a;
+}
+
+
+
+
+
+.searchBox__input{
+    
+    text-align: center;
+    padding: 14px;
+    background-color: #2D3848;
+    
+    
+}
+
+.yazi{
+    font-size: 13px;
+
 }
 

@@ -29,15 +29,20 @@ function PlayerSearcher() {
     return (
         <div>
             <h4 className='SearchHeader'>
-                    Gerçek zamanli oyuncu statları
-                </h4>
+                Gerçek zamanli oyuncu statları
+            </h4>
             <div className='searchBox'>
-                
 
-                <input className='bugo' type="text" placeholder="Oyun içi sihirdar arama" onChange={e => setSearchText(e.target.value)} />
-                <button className="opacity-80" onClick={e => searchForPlayer(e)}><strong>Arama</strong></button>
+                <div className='searchBox__input'>
+                    <input className='bugo' type="text" placeholder="Oyun içi sihirdar arama" onChange={e => setSearchText(e.target.value)}
+                        autoFocus />
+                    <button className="opacity-80" onClick={e => searchForPlayer(e)}>
+
+                        Arama</button>
+                </div>
             </div>
-            {JSON.stringify(playerData) != null ?
+
+            {JSON.stringify(playerData) != "{}" ?
                 <>
                     <p className='playerName'>{playerData.name}</p>
                     <img className='border-2 border-sky-500' height={150} width={150}
@@ -45,7 +50,7 @@ function PlayerSearcher() {
                     <p className='playerData'>{playerData.summonerLevel}</p>
                 </>
                 :
-                <><p>We don't have player data</p></>}
+                <><p>Bu isimde bir oyuncu yok</p></>}
         </div>
     )
 }
