@@ -25,8 +25,7 @@ function Status() {
             {status.hostname}<br />
             {status.region_tag}<br />
             <p>Merhaba Locale {"  "+status.locales}</p><br/>
-            {status.services.map(service => (
-                service.services[2]))}
+            
             
 
         </div>
