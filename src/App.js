@@ -4,6 +4,7 @@ import { Route, Link, Routes } from "react-router-dom"
 import Home from './pages/Home';
 import Istatistic from './pages/Istatistic';
 import StatusPage from './pages/StatusPage';
+import Free from './pages/Free';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route path="/status" element={<StatusPage />} />
       <Route path="/" element={<Home />} />
       <Route path="/statistics" element={<Istatistic />} />
+      <Route path="/freechamp" element={<Free />} />
 
     </Routes>
   );

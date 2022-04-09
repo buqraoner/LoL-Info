@@ -19,7 +19,6 @@ function Status() {
 
     return (
         <div>
-
             {status.name}<br />
             {status.slug}<br />
             {status.hostname}<br />
