@@ -41,7 +41,7 @@ function FeaturedGames() {
     return (
         <div>
             <div className="col">
-                <h1 className='text-center'>En iyi  3 Oyuncu </h1>
+                <h1 className='text-center mt-7'>En iyi  3 Oyuncu </h1>
                 <div className="col-md-3">
                     <div className="card">
                         <div className="card-body">
