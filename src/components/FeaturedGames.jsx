@@ -47,7 +47,7 @@ function FeaturedGames() {
                         <div className="card-body">
                             <h5 className="card-title">{games.summonerName}</h5>
                             <p className="card-text"> {games.tier} {games.leaguePoints} LP </p>
-                            <p>Wins : {games.wins}</p>
+                            <p>Wins : {games.wins}sadf</p>
                         </div>
                     </div>
                 </div>
