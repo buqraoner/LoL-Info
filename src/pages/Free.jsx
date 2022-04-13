@@ -4,15 +4,17 @@ import Githubdata from '../components/github/Githubdata'
 import Navbar from '../components/Navbar'
 
 
-//Navbar,Oyuncu arama ve 
-//kendi bilgilerimin bulunduğu github data'sının bulunduğu footer'ının bulunduğu home.jsx'i
-// Footer yazacaktım githubdata ters oldu biraz :D
+//Navbar,
+//Haftalık Ücretsiz şampiyonların bulunduğu resimler,
+//GithubData,ile birlikte gelen footer yapısı, footer için kullandım.
+
+
 function Free() {
     return (
         <div>
-            <Navbar/>
+            <Navbar />
             <FreeChampions />
-            <Githubdata/>
+            <Githubdata />
         </div>
     )
 }
