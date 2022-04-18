@@ -9,7 +9,7 @@ function PlayerSearcher() {
 
 
 
-    const API_KEY = "RGAPI-76c43f59-debd-45e7-bfe7-f7006c9b875c";
+    const API_KEY = "RGAPI-98931255-4f85-438f-ae00-63923b2cedfc";
 
 
     //const CheetosKey = https://tr1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Cheetos?api_key=RGAPI-f5f8f709-07c8-4b78-a6e1-bc47fc4c6880
@@ -18,8 +18,6 @@ function PlayerSearcher() {
     function searchForPlayer(event) {
         //API CALL
         //TR Sunucusu için
-
-
         var APICallString = "https://tr1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + searchText + "?api_key=" + API_KEY;
 
         axios.get(APICallString).then(function (response) {
@@ -42,8 +40,8 @@ function PlayerSearcher() {
             </h4>
 
             <div className='searchBox'>
-                <div className='searchBox__input'>
-                    <input className='bugo' type="text"
+                <div className='searchBox__input  '>
+                    <input className='bugo text-sky-50 ' type="text"
                         placeholder="Oyun içi sihirdar arama" onChange={e => setSearchText(e.target.value)}
                     />
                     <button className="opacity-80" onClick={e => searchForPlayer(e)}>
@@ -53,9 +51,8 @@ function PlayerSearcher() {
 
             {JSON.stringify(playerData) != "{}" ?
 
-                <div className='PlayerInfoCard'>
-
-                    <div className="h-56 grid grid-cols-3 gap-4 content-center mt-5" >
+                <div className='PlayerInfoCard  '>
+                    <div className="h-56 grid grid-cols-3 gap-4 content-center mb-5 " >
                         <div></div>
                         <div className="Player-Card max-w-sm  rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
                             <div className="flex justify-end px-4 pt-4">
@@ -81,7 +78,6 @@ function PlayerSearcher() {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 :
                 <div>

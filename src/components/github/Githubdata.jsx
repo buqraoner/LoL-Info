@@ -27,8 +27,6 @@ function Githubdata() {
     avatar={data.avatar_url}
     name={data.name}
     url={data.html_url}
-
-
   />;
 
 

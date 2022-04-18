@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import "./styles.css"
 import Githubdata from '../components/github/Githubdata';
 import PlayerSearcher from '../components/PlayerSearch/PlayerSearch';
-import Footer from '../components/Footer';
+
 
 
 
@@ -14,12 +14,11 @@ import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <div>
+    <div className='bg-gray-400'>
       <Navbar />
       <PlayerSearcher />
       <Githubdata />
     </div>
-
   )
 }
 
